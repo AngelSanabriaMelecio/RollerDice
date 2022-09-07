@@ -7,6 +7,15 @@
     android:orientation="vertical">
 
     <TextView
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jose Angel Sanabria"
+        android:textAlignment="center"
+        android:layout_marginBottom="20px"
+        />
+
+    <TextView
         android:id="@+id/lblSaludo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -15,12 +24,27 @@
 
         android:textSize="40sp" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/empty_dice"
-        android:id="@+id/imgRoller"
-        android:layout_gravity="center_horizontal"/>
+    <LinearLayout
+        android:layout_height="500px"
+        android:layout_width="match_parent"
+        >
+        <ImageView
+            android:id="@+id/imgRoller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/empty_dice"
+
+            />
+        <ImageView
+            android:id="@+id/imgRoller2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/empty_dice"
+
+            />
+    </LinearLayout>
 
 
     <Button
@@ -29,6 +53,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="@string/btn_roller" />
+
+
 
 
 </LinearLayout>
